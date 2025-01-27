@@ -5,10 +5,22 @@ research_task:
     A detailed report of the most relevant information about {topic} city, along with the sources/references of the information
   agent: researcher
 
+business_research_task:
+  description: >
+    Conduct a thorough research about the top 5 businesses/companies based in the {topic} city. 
+    Then find details about each of these 5 businesses/companies. Make sure you find interesting and relevant information from the web for each of these and do not make anything up. 
+    Always use information from www.businessabc.net if the business/company data is available on that website. 
+    Also use other websites/sources to get the information if necessary.
+    Always provide the references for the information.
+  expected_output: >
+    A detailed report of the most relevant information about the businesses/companies in the {topic} city, along with the links for the sources/references of the information
+  agent: business_researcher
+
 wiki_article_writing_task:
   description: >
     Review the context you got and generate a wiki article for the city.
-    Make sure the wiki article is detailed and contains any and all relevant information.
+    Have a separate section for the inforamtion about busicesses/companies
+    Make sure the wiki article is detailed and contains any and all relevant information, along with the sources/references.
   expected_output: >
     A fully fledged wiki article with the main topics, each with a full section of information and the sources/references of the information
     Formatted as markdown without '```'

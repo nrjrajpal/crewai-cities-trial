@@ -41,6 +41,14 @@ class Trial():
 			verbose=True,
 			tools=[search_tool]
 		)
+	
+	@agent
+	def business_researcher(self) -> Agent:
+		return Agent(
+			config=self.agents_config['business_researcher'],
+			verbose=True,
+			tools=[search_tool]
+		)
 
 	@agent
 	def wiki_article_writer(self) -> Agent:
@@ -56,14 +64,25 @@ class Trial():
 	def research_task(self) -> Task:
 		return Task(
 			config=self.tasks_config['research_task'],
-			tools=[search_tool]
+			tools=[search_tool],
+			verbose=True
+		)
+	
+	@task
+	def business_research_task(self) -> Task:
+		return Task(
+			config=self.tasks_config['business_research_task'],
+			tools=[search_tool],
+			output_file='business_research.txt',
+			verbose=True
 		)
 
 	@task
 	def wiki_article_writing_task(self) -> Task:
 		return Task(
 			config=self.tasks_config['wiki_article_writing_task'],
-			output_file='wiki_article.md'
+			output_file='wiki_article.md',
+			verbose=True
 		)
 
 	@crew
