@@ -1,0 +1,15 @@
+research_task:
+  description: >
+    Conduct a thorough research about {topic} city Make sure you find any interesting and relevant information.
+  expected_output: >
+    A detailed report of the most relevant information about {topic} city, along with the sources/references of the information
+  agent: researcher
+
+wiki_article_writing_task:
+  description: >
+    Review the context you got and generate a wiki article for the city.
+    Make sure the wiki article is detailed and contains any and all relevant information.
+  expected_output: >
+    A fully fledged wiki article with the main topics, each with a full section of information and the sources/references of the information
+    Formatted as markdown without '```'
+  agent: wiki_article_writer
