@@ -1,191 +1,247 @@
 introduction_task:
   description: >
-    Research and compile an introduction to {topic} city. Provide historical, cultural, and demographic context that helps to understand the city's significance.
-    key_points_to_cover:
-      - Key milestones in the city's history
-      - Cultural characteristics
-      - Demographic trends, population size, and diversity
-    guidelines:
-      - Cite only verified sources for each fact or statistic.
-      - Do not make up facts or include vague generalizations.
-      - Provide a balanced overview of the city's history, culture, and demographics.
-      - Ensure that the introduction helps the reader understand the city's significance on a global scale.
-    additional_instructions:
-      - Use reputable online sources like government websites or academic papers.
-      - Avoid filler information; focus on key facts.
+    Research and compile an introduction to {topic} city. Provide historical, cultural, and demographic context that helps to understand the city's significance. References must be cited properly in Wikipedia-style, using numbered citations [1], [2], etc., with full details listed at the bottom.
   expected_output: >
-    A clear and factual introduction that sets the stage for the report, including important historical events, cultural aspects, and demographics.
+    A clear and factual introduction, including historical events, cultural aspects, and demographics, with Wikipedia-style citations.
   agent: introduction_agent
 
 data_and_facts_task:
   description: >
-    Collect specific data related to the city's geography, population, and other critical facts. Provide a statistical overview with verified sources.
-    key_points_to_cover:
-      - Geographical information (location, climate, natural landmarks)
-      - Population data, growth trends, and demographics
-      - Any key distinguishing facts (e.g., population density, landmark statistics)
-    guidelines:
-      - Ensure that all data points are factual and up-to-date.
-      - Cite only credible sources such as government databases or reputable publications.
-      - Use statistics or official data whenever possible.
-    additional_instructions:
-      - Do not include outdated or unverifiable data.
-      - Focus on providing **verified** facts with up-to-date references.
+    Collect specific data related to the city's geography, population, and other critical facts. References should be cited in Wikipedia-style, with numbered citations [1], [2], etc., and full details at the end.
   expected_output: >
-    A well-organized list of important facts about the city, including geographical and demographic data.
+    A well-organized list of important geographical and demographic facts, with properly formatted citations.
   agent: data_and_facts_agent
-
 
 government_task:
   description: >
-    Investigate and summarize the political and governmental structure of {topic} city. This includes political history, governing bodies, and policies.
-    key_points_to_cover:
-      - Government structure (e.g., mayor, council, local political system)
-      - Political history and key figures in the city's governance
-      - Current government policies or challenges
-    guidelines:
-      - Focus on verified political data such as government websites and credible political analyses.
-      - Avoid speculating on political trends or future scenarios without backing them with sources.
-    additional_instructions:
-      - Cite sources such as official city government pages, political publications, or governmental reports.
-      - Do not generalize or present political opinions—stick to objective facts.
+    Investigate and summarize the political and governmental structure of {topic} city. References must be formatted in Wikipedia-style, with numbered citations [1], [2], etc., and full source details at the end.
   expected_output: >
-    A clear description of the political system, current governance, and historical context of the city.
+    A detailed summary of the city's political system, governance, and history, with proper citations.
   agent: government_agent
-
 
 economy_task:
   description: >
-    Research the economic status of {topic} city, including its key industries, GDP, employment rates, and current economic conditions.
-    key_points_to_cover:
-      - Major industries driving the economy (e.g., technology, finance, manufacturing)
-      - Gross Domestic Product (GDP) of the city and comparisons with similar cities
-      - Employment trends and key economic sectors
-    guidelines:
-      - Provide verified economic data and recent reports.
-      - Focus on key economic indicators and avoid unverified claims.
-      - Include data on economic trends, such as new developments or shifts in the economy.
-    additional_instructions:
-      - Use reputable economic sources, such as government reports, business journals, or internationally recognized research institutions.
-      - Ensure that any economic trends are backed by data and not speculation.
+    Research the economic status of {topic} city, including its key industries, GDP, and employment trends. All data should be cited using Wikipedia-style references [1], [2], etc.
   expected_output: >
-    A detailed overview of the city's economy with statistical evidence and analysis of the key industries, GDP, and employment trends.
+    A factual and well-researched summary of the city's economy, with properly formatted citations.
   agent: economy_agent
-
 
 business_environment_task:
   description: >
-    Research and summarize the business climate in {topic} city. Include factors like ease of doing business, regulations, and challenges entrepreneurs may face.
-    key_points_to_cover:
-      - Ease of doing business (e.g., starting a business, regulations)
-      - Government policies related to business (e.g., tax policies, subsidies)
-      - Challenges businesses face (e.g., bureaucratic obstacles, high costs)
-    guidelines:
-      - Cite only reliable business sources and reports, including data from global organizations like the World Bank or regional chambers of commerce.
-      - Avoid generalizations and unsupported claims.
-      - Include details on local business incentives or barriers.
-    additional_instructions:
-      - Make sure to use government and reputable business publications as sources.
-      - Do not include personal opinions or projections; keep the report factual and data-driven.
+    Research the business climate in {topic} city, focusing on ease of doing business, regulations, and challenges. References should follow Wikipedia-style citation format [1], [2], etc.
   expected_output: >
-    A clear, factual summary of the business environment, focusing on both opportunities and challenges for entrepreneurs in {topic} city.
+    A comprehensive summary of the business environment, with citations listed properly.
   agent: business_environment_agent
-
 
 infrastructure_task:
   description: >
-    Investigate and summarize the infrastructure of {topic} city, including transportation systems, utilities, and any ongoing infrastructure projects.
-    key_points_to_cover:
-      - Transportation systems (e.g., subways, buses, airports)
-      - Utility infrastructure (e.g., electricity, water, waste management)
-      - Ongoing or planned infrastructure projects (e.g., smart city initiatives, public transportation upgrades)
-    guidelines:
-      - Ensure all facts are based on reliable sources such as city government reports or infrastructure-related publications.
-      - Avoid speculative information about future projects unless backed by official announcements.
-    additional_instructions:
-      - Do not mention unverified or unofficial projects.
-      - Make sure all references are from official or credible infrastructure sources (e.g., municipal reports, transportation departments).
+    Investigate and summarize the infrastructure of {topic} city, including transportation, utilities, and ongoing projects. References should be formatted in Wikipedia-style [1], [2], etc.
   expected_output: >
-    A comprehensive overview of the city's infrastructure, highlighting key systems and any major ongoing developments.
+    A well-organized report on infrastructure, with clearly formatted citations.
   agent: infrastructure_agent
-
 
 technology_task:
   description: >
-    Investigate the technology sector in {topic} city, including major tech companies, innovations, and government-led technology initiatives.
-    key_points_to_cover:
-      - Key tech companies and startups in the city
-      - Major technological innovations (e.g., smart city initiatives, digital transformation)
-      - Public sector tech initiatives (e.g., government programs, tech-based urban solutions)
-    guidelines:
-      - Focus on verified technology data, including government publications, tech reports, and reputable industry sources.
-      - Avoid discussing speculative technologies that do not have proper backing or evidence.
-    additional_instructions:
-      - Use credible sources for any tech-related data (e.g., tech publications, government announcements).
-      - Ensure that no future developments or trends are presented as facts unless they are backed by strong evidence.
+    Investigate the technology sector in {topic} city, including major tech companies, innovations, and government-led initiatives. Use proper Wikipedia-style references [1], [2], etc.
   expected_output: >
-    A detailed and factual summary of the city's tech landscape, including major players and ongoing initiatives.
+    A structured summary of the technology landscape with proper citations.
   agent: technology_agent
-
 
 final_writer_task:
   description: >
-    Combine all the research from each section into a cohesive and well-written wiki article. Ensure each section flows logically, and provide proper citations for all data points.
-    key_points_to_cover:
-      - Introduction, Data and Facts, Government, Economy, Business Environment, Infrastructure, Technology.
-      - Synthesize the information so that each section builds on the next, ensuring readability and logical progression.
-      - Add a conclusion that summarizes the key points and highlights the city's overall status.
-    guidelines:
-      - Use only the data collected by the previous agents—do not add new information or make assumptions.
-      - Cite all sources used in each section as per the guidelines provided by the individual agents.
-      - Ensure the wiki article is clear, professional, and free from grammatical errors.
-    additional_instructions:
-      - Ensure the final document is cohesive, and the sections tie together smoothly.
-      - Focus on clarity and logical flow between sections while maintaining factual integrity.
+    Combine all research sections into a cohesive, comprehensive, well-written wiki article, ensuring proper Wikipedia-style citations throughout the document.
   expected_output: >
-    A polished, well-organized wiki article that accurately reflects the research from each section, with proper citations and a comprehensive conclusion.
+    A detailed, polished and well-organized wiki article with clear references in Wikipedia-style citation format.
   agent: final_writer_agent
 
-
-# research_task:
+# introduction_task:
 #   description: >
-#     Conduct a **thorough** and **fact-based** research on {topic} city. 
-#     Focus on collecting verified and relevant information, covering history, geography, demographics, culture, and any unique aspects of the city. 
-#     Ensure that all data comes from reputable sources and is clearly referenced.
+#     Research and compile an introduction to {topic} city. Provide historical, cultural, and demographic context that helps to understand the city's significance.
+#     key_points_to_cover:
+#       - Key milestones in the city's history
+#       - Cultural characteristics
+#       - Demographic trends, population size, and diversity
+#     guidelines:
+#       - Cite only verified sources for each fact or statistic.
+#       - Do not make up facts or include vague generalizations.
+#       - Provide a balanced overview of the city's history, culture, and demographics.
+#       - Ensure that the introduction helps the reader understand the city's significance on a global scale.
+#     additional_instructions:
+#       - Use reputable online sources like government websites or academic papers.
+#       - Avoid filler information; focus on key facts.
 #   expected_output: >
-#     A well-researched report on {topic} city, covering key topics such as history, geography, culture, and demographics. 
-#     Each fact must be cited using numbered references [1], [2], with a full reference list at the end.
-#     **No made-up information is allowed—only include facts that have been directly sourced.**
-#   agent: researcher
+#     A clear and factual introduction that sets the stage for the report, including important historical events, cultural aspects, and demographics.
+#   agent: introduction_agent
 
-# business_research_task:
+# data_and_facts_task:
 #   description: >
-#     Conduct a thorough investigation into the **top 5 businesses/companies** based in {topic} city.  
-#     - **Step 1: Find an existing ranking of the top 5 companies.**  
-#     - **Step 2: If no ranking exists, rank them yourself** based on financial metrics, market value, and industry significance.  
-#     - **Step 3: Perform individual research on each company** to gather key details about their industry, history, financials, and global influence.  
-#     - **Step 4: Present a properly ranked list** with explanations for the rankings.  
-#     - **Step 5: Ensure citations are real, specific, and properly formatted—no placeholders.**  
+#     Collect specific data related to the city's geography, population, and other critical facts. Provide a statistical overview with verified sources.
+#     key_points_to_cover:
+#       - Geographical information (location, climate, natural landmarks)
+#       - Population data, growth trends, and demographics
+#       - Any key distinguishing facts (e.g., population density, landmark statistics)
+#     guidelines:
+#       - Ensure that all data points are factual and up-to-date.
+#       - Cite only credible sources such as government databases or reputable publications.
+#       - Use statistics or official data whenever possible.
+#     additional_instructions:
+#       - Do not include outdated or unverifiable data.
+#       - Focus on providing **verified** facts with up-to-date references.
 #   expected_output: >
-#     - A **clear and justified ranking of the top 5 companies** in {topic} city, even if the agent has to determine it manually.  
-#     - **Detailed company profiles** for each of the top 5 companies, including revenue, industry, headquarters, and influence.  
-#     - **Properly formatted citations** with full source details—no placeholders or vague references.  
-#     - **Citations must be numbered like [1], [2] and correspond to a properly formatted reference list at the end.**  
-#     - **All rankings must be explained based on real, verifiable data—no assumptions allowed.**  
-#   agent: business_researcher
+#     A well-organized list of important facts about the city, including geographical and demographic data.
+#   agent: data_and_facts_agent
 
 
-# wiki_article_writing_task:
+# government_task:
 #   description: >
-#     Write a **comprehensive, well-structured, and fact-based** wiki article on {topic} city. 
-#     - Use only verified research findings, avoiding any assumptions or made-up information.
-#     - Organize the article into clear sections, covering the city's history, geography, demographics, and culture.
-#     - Include a **dedicated section on the top 5 businesses**, detailing their operations and importance.
-#     - Ensure that every fact is properly cited with numbered references like [1], [2], and include a reference list at the end.
+#     Investigate and summarize the political and governmental structure of {topic} city. This includes political history, governing bodies, and policies.
+#     key_points_to_cover:
+#       - Government structure (e.g., mayor, council, local political system)
+#       - Political history and key figures in the city's governance
+#       - Current government policies or challenges
+#     guidelines:
+#       - Focus on verified political data such as government websites and credible political analyses.
+#       - Avoid speculating on political trends or future scenarios without backing them with sources.
+#     additional_instructions:
+#       - Cite sources such as official city government pages, political publications, or governmental reports.
+#       - Do not generalize or present political opinions—stick to objective facts.
 #   expected_output: >
-#     A fully formatted Wikipedia-style article on {topic} city, with:  
-#     - A **structured format** including history, geography, demographics, culture, and economy.  
-#     - A **dedicated section for businesses**, detailing the top 5 companies with verified data.  
-#     - **Proper citations** after each fact, using [1], [2] notation, with a full reference list at the end.  
-#     - **No assumptions or made-up information—only verified research findings.**
-#   agent: wiki_article_writer
+#     A clear description of the political system, current governance, and historical context of the city.
+#   agent: government_agent
+
+
+# economy_task:
+#   description: >
+#     Research the economic status of {topic} city, including its key industries, GDP, employment rates, and current economic conditions.
+#     key_points_to_cover:
+#       - Major industries driving the economy (e.g., technology, finance, manufacturing)
+#       - Gross Domestic Product (GDP) of the city and comparisons with similar cities
+#       - Employment trends and key economic sectors
+#     guidelines:
+#       - Provide verified economic data and recent reports.
+#       - Focus on key economic indicators and avoid unverified claims.
+#       - Include data on economic trends, such as new developments or shifts in the economy.
+#     additional_instructions:
+#       - Use reputable economic sources, such as government reports, business journals, or internationally recognized research institutions.
+#       - Ensure that any economic trends are backed by data and not speculation.
+#   expected_output: >
+#     A detailed overview of the city's economy with statistical evidence and analysis of the key industries, GDP, and employment trends.
+#   agent: economy_agent
+
+
+# business_environment_task:
+#   description: >
+#     Research and summarize the business climate in {topic} city. Include factors like ease of doing business, regulations, and challenges entrepreneurs may face.
+#     key_points_to_cover:
+#       - Ease of doing business (e.g., starting a business, regulations)
+#       - Government policies related to business (e.g., tax policies, subsidies)
+#       - Challenges businesses face (e.g., bureaucratic obstacles, high costs)
+#     guidelines:
+#       - Cite only reliable business sources and reports, including data from global organizations like the World Bank or regional chambers of commerce.
+#       - Avoid generalizations and unsupported claims.
+#       - Include details on local business incentives or barriers.
+#     additional_instructions:
+#       - Make sure to use government and reputable business publications as sources.
+#       - Do not include personal opinions or projections; keep the report factual and data-driven.
+#   expected_output: >
+#     A clear, factual summary of the business environment, focusing on both opportunities and challenges for entrepreneurs in {topic} city.
+#   agent: business_environment_agent
+
+
+# infrastructure_task:
+#   description: >
+#     Investigate and summarize the infrastructure of {topic} city, including transportation systems, utilities, and any ongoing infrastructure projects.
+#     key_points_to_cover:
+#       - Transportation systems (e.g., subways, buses, airports)
+#       - Utility infrastructure (e.g., electricity, water, waste management)
+#       - Ongoing or planned infrastructure projects (e.g., smart city initiatives, public transportation upgrades)
+#     guidelines:
+#       - Ensure all facts are based on reliable sources such as city government reports or infrastructure-related publications.
+#       - Avoid speculative information about future projects unless backed by official announcements.
+#     additional_instructions:
+#       - Do not mention unverified or unofficial projects.
+#       - Make sure all references are from official or credible infrastructure sources (e.g., municipal reports, transportation departments).
+#   expected_output: >
+#     A comprehensive overview of the city's infrastructure, highlighting key systems and any major ongoing developments.
+#   agent: infrastructure_agent
+
+
+# technology_task:
+#   description: >
+#     Investigate the technology sector in {topic} city, including major tech companies, innovations, and government-led technology initiatives.
+#     key_points_to_cover:
+#       - Key tech companies and startups in the city
+#       - Major technological innovations (e.g., smart city initiatives, digital transformation)
+#       - Public sector tech initiatives (e.g., government programs, tech-based urban solutions)
+#     guidelines:
+#       - Focus on verified technology data, including government publications, tech reports, and reputable industry sources.
+#       - Avoid discussing speculative technologies that do not have proper backing or evidence.
+#     additional_instructions:
+#       - Use credible sources for any tech-related data (e.g., tech publications, government announcements).
+#       - Ensure that no future developments or trends are presented as facts unless they are backed by strong evidence.
+#   expected_output: >
+#     A detailed and factual summary of the city's tech landscape, including major players and ongoing initiatives.
+#   agent: technology_agent
+
+
+# final_writer_task:
+#   description: >
+#     Combine all the research from each section into a cohesive and well-written wiki article. Ensure each section flows logically, and provide proper citations for all data points.
+#     key_points_to_cover:
+#       - Introduction, Data and Facts, Government, Economy, Business Environment, Infrastructure, Technology.
+#       - Synthesize the information so that each section builds on the next, ensuring readability and logical progression.
+#       - Add a conclusion that summarizes the key points and highlights the city's overall status.
+#     guidelines:
+#       - Use only the data collected by the previous agents—do not add new information or make assumptions.
+#       - Cite all sources used in each section as per the guidelines provided by the individual agents.
+#       - Ensure the wiki article is clear, professional, and free from grammatical errors.
+#     additional_instructions:
+#       - Ensure the final document is cohesive, and the sections tie together smoothly.
+#       - Focus on clarity and logical flow between sections while maintaining factual integrity.
+#   expected_output: >
+#     A polished, well-organized wiki article that accurately reflects the research from each section, with proper citations and a comprehensive conclusion.
+#   agent: final_writer_agent
+
+
+# # research_task:
+# #   description: >
+# #     Conduct a **thorough** and **fact-based** research on {topic} city. 
+# #     Focus on collecting verified and relevant information, covering history, geography, demographics, culture, and any unique aspects of the city. 
+# #     Ensure that all data comes from reputable sources and is clearly referenced.
+# #   expected_output: >
+# #     A well-researched report on {topic} city, covering key topics such as history, geography, culture, and demographics. 
+# #     Each fact must be cited using numbered references [1], [2], with a full reference list at the end.
+# #     **No made-up information is allowed—only include facts that have been directly sourced.**
+# #   agent: researcher
+
+# # business_research_task:
+# #   description: >
+# #     Conduct a thorough investigation into the **top 5 businesses/companies** based in {topic} city.  
+# #     - **Step 1: Find an existing ranking of the top 5 companies.**  
+# #     - **Step 2: If no ranking exists, rank them yourself** based on financial metrics, market value, and industry significance.  
+# #     - **Step 3: Perform individual research on each company** to gather key details about their industry, history, financials, and global influence.  
+# #     - **Step 4: Present a properly ranked list** with explanations for the rankings.  
+# #     - **Step 5: Ensure citations are real, specific, and properly formatted—no placeholders.**  
+# #   expected_output: >
+# #     - A **clear and justified ranking of the top 5 companies** in {topic} city, even if the agent has to determine it manually.  
+# #     - **Detailed company profiles** for each of the top 5 companies, including revenue, industry, headquarters, and influence.  
+# #     - **Properly formatted citations** with full source details—no placeholders or vague references.  
+# #     - **Citations must be numbered like [1], [2] and correspond to a properly formatted reference list at the end.**  
+# #     - **All rankings must be explained based on real, verifiable data—no assumptions allowed.**  
+# #   agent: business_researcher
+
+
+# # wiki_article_writing_task:
+# #   description: >
+# #     Write a **comprehensive, well-structured, and fact-based** wiki article on {topic} city. 
+# #     - Use only verified research findings, avoiding any assumptions or made-up information.
+# #     - Organize the article into clear sections, covering the city's history, geography, demographics, and culture.
+# #     - Include a **dedicated section on the top 5 businesses**, detailing their operations and importance.
+# #     - Ensure that every fact is properly cited with numbered references like [1], [2], and include a reference list at the end.
+# #   expected_output: >
+# #     A fully formatted Wikipedia-style article on {topic} city, with:  
+# #     - A **structured format** including history, geography, demographics, culture, and economy.  
+# #     - A **dedicated section for businesses**, detailing the top 5 companies with verified data.  
+# #     - **Proper citations** after each fact, using [1], [2] notation, with a full reference list at the end.  
+# #     - **No assumptions or made-up information—only verified research findings.**
+# #   agent: wiki_article_writer

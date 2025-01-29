@@ -1,0 +1,7 @@
+San Francisco operates under a "strong mayor" form of government, a mayoral-council system.[10]  This means the mayor holds significant executive power, appointing department heads and having significant influence over the city's budget and policy. [10] The legislative branch is the Board of Supervisors, an eleven-member body elected by district, using ranked-choice voting.[10, 11]  The Board of Supervisors passes ordinances, approves the budget, and oversees the city's various departments. [10]  In addition to the Mayor and Board of Supervisors, other elected officials include the Sheriff, District Attorney, Assessor-Recorder, Public Defender, and Treasurer-Tax Collector. [10]  Numerous commissions and boards advise the various departments, providing expertise and citizen input into city governance. [12]  The city's structure reflects its unique history as a consolidated city-county, meaning it functions as both a city and a county, with a unified government structure. [10]
+
+
+
+[10] "Government of San Francisco." *Wikipedia*, https://en.wikipedia.org/wiki/Government_of_San_Francisco (accessed October 27, 2023).
+[11]  "Ranked-choice voting." *Wikipedia*, https://en.wikipedia.org/wiki/Ranked-choice_voting (accessed October 27, 2023).
+[12] "City and County of San Francisco organizational chart." *SF.gov*, https://www.sf.gov/information--city-and-county-san-francisco-organizational-chart (accessed October 27, 2023).

@@ -160,6 +160,7 @@ class Trial():
 		return Task(
 			config=self.tasks_config['introduction_task'],
 			tools=[search_tool],
+			output_file='outputs/SanFrancisco/01introduction.md',
 			verbose=True
 		)
 
@@ -168,6 +169,7 @@ class Trial():
 		return Task(
 			config=self.tasks_config['data_and_facts_task'],
 			tools=[search_tool],
+			output_file='outputs/SanFrancisco/02data_and_facts.md',
 			verbose=True
 		)
 
@@ -176,6 +178,7 @@ class Trial():
 		return Task(
 			config=self.tasks_config['government_task'],
 			tools=[search_tool],
+			output_file='outputs/SanFrancisco/03government.md',
 			verbose=True
 		)
 
@@ -184,6 +187,7 @@ class Trial():
 		return Task(
 			config=self.tasks_config['economy_task'],
 			tools=[search_tool],
+			output_file='outputs/SanFrancisco/04economy.md',
 			verbose=True
 		)
 
@@ -192,6 +196,7 @@ class Trial():
 		return Task(
 			config=self.tasks_config['business_environment_task'],
 			tools=[search_tool],
+			output_file='outputs/SanFrancisco/05business_environment.md',
 			verbose=True
 		)
 
@@ -200,6 +205,7 @@ class Trial():
 		return Task(
 			config=self.tasks_config['infrastructure_task'],
 			tools=[search_tool],
+			output_file='outputs/SanFrancisco/06infrastructure.md',
 			verbose=True
 		)
 
@@ -208,6 +214,7 @@ class Trial():
 		return Task(
 			config=self.tasks_config['technology_task'],
 			tools=[search_tool],
+			output_file='outputs/SanFrancisco/07technology.md',
 			verbose=True
 		)
 
@@ -215,7 +222,7 @@ class Trial():
 	def final_writer_task(self) -> Task:
 		return Task(
 			config=self.tasks_config['final_writer_task'],
-			output_file='outputs/wiki_article.md',
+			output_file='outputs/SanFrancisco/00wiki_article.md',
 			verbose=True
 		)
 
