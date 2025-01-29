@@ -41,56 +41,184 @@ class Trial():
 
 	# If you would like to add tools to your agents, you can learn more about it here:
 	# https://docs.crewai.com/concepts/agents#agent-tools
+	# @agent
+	# def researcher(self) -> Agent:
+	# 	return Agent(
+	# 		config=self.agents_config['researcher'],
+	# 		verbose=True,
+	# 		tools=[search_tool]
+	# 	)
+	
+	# @agent
+	# def business_researcher(self) -> Agent:
+	# 	return Agent(
+	# 		config=self.agents_config['business_researcher'],
+	# 		verbose=True,
+	# 		tools=[search_tool]
+	# 	)
+
+	# @agent
+	# def wiki_article_writer(self) -> Agent:
+	# 	return Agent(
+	# 		config=self.agents_config['wiki_article_writer'],
+	# 		verbose=True
+	# 	)
+
 	@agent
-	def researcher(self) -> Agent:
+	def introduction_agent(self) -> Agent:
 		return Agent(
-			config=self.agents_config['researcher'],
+			config=self.agents_config['introduction_agent'],
+			verbose=True,
+			tools=[search_tool]
+		)
+
+	@agent
+	def data_and_facts_agent(self) -> Agent:
+		return Agent(
+			config=self.agents_config['data_and_facts_agent'],
+			verbose=True,
+			tools=[search_tool]
+		)
+
+	@agent
+	def government_agent(self) -> Agent:
+		return Agent(
+			config=self.agents_config['government_agent'],
+			verbose=True,
+			tools=[search_tool]
+		)
+
+	@agent
+	def economy_agent(self) -> Agent:
+		return Agent(
+			config=self.agents_config['economy_agent'],
+			verbose=True,
+			tools=[search_tool]
+		)
+
+	@agent
+	def business_environment_agent(self) -> Agent:
+		return Agent(
+			config=self.agents_config['business_environment_agent'],
+			verbose=True,
+			tools=[search_tool]
+		)
+
+	@agent
+	def infrastructure_agent(self) -> Agent:
+		return Agent(
+			config=self.agents_config['infrastructure_agent'],
+			verbose=True,
+			tools=[search_tool]
+		)
+
+	@agent
+	def technology_agent(self) -> Agent:
+		return Agent(
+			config=self.agents_config['technology_agent'],
 			verbose=True,
 			tools=[search_tool]
 		)
 	
 	@agent
-	def business_researcher(self) -> Agent:
+	def final_writer_agent(self) -> Agent:
 		return Agent(
-			config=self.agents_config['business_researcher'],
-			verbose=True,
-			tools=[search_tool]
-		)
-
-	@agent
-	def wiki_article_writer(self) -> Agent:
-		return Agent(
-			config=self.agents_config['wiki_article_writer'],
+			config=self.agents_config['final_writer_agent'],
 			verbose=True
 		)
-
+	
 	# To learn more about structured task outputs, 
 	# task dependencies, and task callbacks, check out the documentation:
 	# https://docs.crewai.com/concepts/tasks#overview-of-a-task
-	@task
-	def research_task(self) -> Task:
-		return Task(
-			config=self.tasks_config['research_task'],
-			tools=[search_tool],
-			verbose=True
-		)
+	# @task
+	# def research_task(self) -> Task:
+	# 	return Task(
+	# 		config=self.tasks_config['research_task'],
+	# 		tools=[search_tool],
+	# 		verbose=True
+	# 	)
 	
+	# @task
+	# def business_research_task(self) -> Task:
+	# 	return Task(
+	# 		config=self.tasks_config['business_research_task'],
+	# 		tools=[search_tool],
+	# 		output_file='outputs/business_research.txt',
+	# 		verbose=True
+	# 	)
+
+	# @task
+	# def wiki_article_writing_task(self) -> Task:
+	# 	return Task(
+	# 		config=self.tasks_config['wiki_article_writing_task'],
+	# 		output_file='outputs/wiki_article.md',
+	# 		verbose=True
+	# 	)
+
 	@task
-	def business_research_task(self) -> Task:
+	def introduction_task(self) -> Task:
 		return Task(
-			config=self.tasks_config['business_research_task'],
+			config=self.tasks_config['introduction_task'],
 			tools=[search_tool],
-			output_file='outputs/business_research.txt',
 			verbose=True
 		)
 
 	@task
-	def wiki_article_writing_task(self) -> Task:
+	def data_and_facts_task(self) -> Task:
 		return Task(
-			config=self.tasks_config['wiki_article_writing_task'],
+			config=self.tasks_config['data_and_facts_task'],
+			tools=[search_tool],
+			verbose=True
+		)
+
+	@task
+	def government_task(self) -> Task:
+		return Task(
+			config=self.tasks_config['government_task'],
+			tools=[search_tool],
+			verbose=True
+		)
+
+	@task
+	def economy_task(self) -> Task:
+		return Task(
+			config=self.tasks_config['economy_task'],
+			tools=[search_tool],
+			verbose=True
+		)
+
+	@task
+	def business_environment_task(self) -> Task:
+		return Task(
+			config=self.tasks_config['business_environment_task'],
+			tools=[search_tool],
+			verbose=True
+		)
+
+	@task
+	def infrastructure_task(self) -> Task:
+		return Task(
+			config=self.tasks_config['infrastructure_task'],
+			tools=[search_tool],
+			verbose=True
+		)
+
+	@task
+	def technology_task(self) -> Task:
+		return Task(
+			config=self.tasks_config['technology_task'],
+			tools=[search_tool],
+			verbose=True
+		)
+
+	@task
+	def final_writer_task(self) -> Task:
+		return Task(
+			config=self.tasks_config['final_writer_task'],
 			output_file='outputs/wiki_article.md',
 			verbose=True
 		)
+
 
 	@crew
 	def crew(self) -> Crew:

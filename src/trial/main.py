@@ -18,7 +18,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'Tokyo'
+        'topic': 'Delhi'
     }
     Trial().crew().kickoff(inputs=inputs)
 
