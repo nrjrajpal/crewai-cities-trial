@@ -1,27 +1,42 @@
 research_task:
   description: >
-    Conduct a thorough research about {topic} city Make sure you find any interesting and relevant information.
+    Conduct a **thorough** and **fact-based** research on {topic} city. 
+    Focus on collecting verified and relevant information, covering history, geography, demographics, culture, and any unique aspects of the city. 
+    Ensure that all data comes from reputable sources and is clearly referenced.
   expected_output: >
-    A detailed report of the most relevant information about {topic} city, along with the sources/references of the information
+    A well-researched report on {topic} city, covering key topics such as history, geography, culture, and demographics. 
+    Each fact must be cited using numbered references [1], [2], with a full reference list at the end.
+    **No made-up information is allowed—only include facts that have been directly sourced.**
   agent: researcher
 
 business_research_task:
   description: >
-    Conduct a thorough research about the top 5 businesses/companies based in the {topic} city. 
-    Then find details about each of these 5 businesses/companies. Make sure you find interesting and relevant information from the web for each of these and do not make anything up. 
-    Always use information from www.businessabc.net if the business/company data is available on that website. 
-    Also use other websites/sources to get the information if necessary.
-    Always provide the references for the information.
+    Conduct a thorough investigation into the **top 5 businesses/companies** based in {topic} city.  
+    - **Step 1: Find an existing ranking of the top 5 companies.**  
+    - **Step 2: If no ranking exists, rank them yourself** based on financial metrics, market value, and industry significance.  
+    - **Step 3: Perform individual research on each company** to gather key details about their industry, history, financials, and global influence.  
+    - **Step 4: Present a properly ranked list** with explanations for the rankings.  
+    - **Step 5: Ensure citations are real, specific, and properly formatted—no placeholders.**  
   expected_output: >
-    A detailed report of the most relevant information about the businesses/companies in the {topic} city, along with the links for the sources/references of the information
+    - A **clear and justified ranking of the top 5 companies** in {topic} city, even if the agent has to determine it manually.  
+    - **Detailed company profiles** for each of the top 5 companies, including revenue, industry, headquarters, and influence.  
+    - **Properly formatted citations** with full source details—no placeholders or vague references.  
+    - **Citations must be numbered like [1], [2] and correspond to a properly formatted reference list at the end.**  
+    - **All rankings must be explained based on real, verifiable data—no assumptions allowed.**  
   agent: business_researcher
+
 
 wiki_article_writing_task:
   description: >
-    Review the context you got and generate a wiki article for the city.
-    Have a separate section for the inforamtion about busicesses/companies
-    Make sure the wiki article is detailed and contains any and all relevant information, along with the sources/references.
+    Write a **comprehensive, well-structured, and fact-based** wiki article on {topic} city. 
+    - Use only verified research findings, avoiding any assumptions or made-up information.
+    - Organize the article into clear sections, covering the city’s history, geography, demographics, and culture.
+    - Include a **dedicated section on the top 5 businesses**, detailing their operations and importance.
+    - Ensure that every fact is properly cited with numbered references like [1], [2], and include a reference list at the end.
   expected_output: >
-    A fully fledged wiki article with the main topics, each with a full section of information and the sources/references of the information
-    Formatted as markdown without '```'
+    A fully formatted Wikipedia-style article on {topic} city, with:  
+    - A **structured format** including history, geography, demographics, culture, and economy.  
+    - A **dedicated section for businesses**, detailing the top 5 companies with verified data.  
+    - **Proper citations** after each fact, using [1], [2] notation, with a full reference list at the end.  
+    - **No assumptions or made-up information—only verified research findings.**
   agent: wiki_article_writer

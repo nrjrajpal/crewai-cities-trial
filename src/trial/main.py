@@ -11,12 +11,14 @@ warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 # Replace with inputs you want to test with, it will automatically
 # interpolate any tasks and agents information
 
+# Must precede any llm module imports
+
 def run():
     """
     Run the crew.
     """
     inputs = {
-        'topic': 'New York'
+        'topic': 'Tokyo'
     }
     Trial().crew().kickoff(inputs=inputs)
 
@@ -26,7 +28,7 @@ def train():
     Train the crew for a given number of iterations.
     """
     inputs = {
-        "topic": "New York"
+        "topic": "Paris"
     }
     try:
         Trial().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
@@ -49,7 +51,7 @@ def test():
     Test the crew execution and returns the results.
     """
     inputs = {
-        "topic": "New York"
+        "topic": "Paris"
     }
     try:
         Trial().crew().test(n_iterations=int(sys.argv[1]), openai_model_name=sys.argv[2], inputs=inputs)

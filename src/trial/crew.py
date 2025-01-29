@@ -1,3 +1,10 @@
+import os
+from dotenv import load_dotenv
+from langtrace_python_sdk import langtrace
+load_dotenv()
+
+langtrace.init(api_key = os.environ["LANGTRACE_API_KEY"])
+
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task, before_kickoff, after_kickoff
 from crewai_tools import SerperDevTool
@@ -73,7 +80,7 @@ class Trial():
 		return Task(
 			config=self.tasks_config['business_research_task'],
 			tools=[search_tool],
-			output_file='business_research.txt',
+			output_file='outputs/business_research.txt',
 			verbose=True
 		)
 
@@ -81,7 +88,7 @@ class Trial():
 	def wiki_article_writing_task(self) -> Task:
 		return Task(
 			config=self.tasks_config['wiki_article_writing_task'],
-			output_file='wiki_article.md',
+			output_file='outputs/wiki_article.md',
 			verbose=True
 		)
 
