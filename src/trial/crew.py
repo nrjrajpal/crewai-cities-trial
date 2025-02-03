@@ -160,7 +160,7 @@ class Trial():
 		return Task(
 			config=self.tasks_config['introduction_task'],
 			tools=[search_tool],
-			output_file='outputs/SanFrancisco/01introduction.md',
+			output_file='outputs/01Jodhpur/01_introduction.md',
 			verbose=True
 		)
 
@@ -169,7 +169,7 @@ class Trial():
 		return Task(
 			config=self.tasks_config['data_and_facts_task'],
 			tools=[search_tool],
-			output_file='outputs/SanFrancisco/02data_and_facts.md',
+			output_file='outputs/01Jodhpur/02_data_and_facts.md',
 			verbose=True
 		)
 
@@ -178,7 +178,7 @@ class Trial():
 		return Task(
 			config=self.tasks_config['government_task'],
 			tools=[search_tool],
-			output_file='outputs/SanFrancisco/03government.md',
+			output_file='outputs/01Jodhpur/03_government.md',
 			verbose=True
 		)
 
@@ -187,7 +187,7 @@ class Trial():
 		return Task(
 			config=self.tasks_config['economy_task'],
 			tools=[search_tool],
-			output_file='outputs/SanFrancisco/04economy.md',
+			output_file='outputs/01Jodhpur/04_economy.md',
 			verbose=True
 		)
 
@@ -196,7 +196,7 @@ class Trial():
 		return Task(
 			config=self.tasks_config['business_environment_task'],
 			tools=[search_tool],
-			output_file='outputs/SanFrancisco/05business_environment.md',
+			output_file='outputs/01Jodhpur/05_business_environment.md',
 			verbose=True
 		)
 
@@ -205,7 +205,7 @@ class Trial():
 		return Task(
 			config=self.tasks_config['infrastructure_task'],
 			tools=[search_tool],
-			output_file='outputs/SanFrancisco/06infrastructure.md',
+			output_file='outputs/01Jodhpur/06_infrastructure.md',
 			verbose=True
 		)
 
@@ -214,7 +214,7 @@ class Trial():
 		return Task(
 			config=self.tasks_config['technology_task'],
 			tools=[search_tool],
-			output_file='outputs/SanFrancisco/07technology.md',
+			output_file='outputs/01Jodhpur/07_technology.md',
 			verbose=True
 		)
 
@@ -222,8 +222,9 @@ class Trial():
 	def final_writer_task(self) -> Task:
 		return Task(
 			config=self.tasks_config['final_writer_task'],
-			output_file='outputs/SanFrancisco/00wiki_article.md',
-			verbose=True
+			output_file='outputs/01Jodhpur/00_wiki_article.md',
+			verbose=True,
+			context=[self.introduction_task(), self.data_and_facts_task(), self.government_task(), self.economy_task(), self.business_environment_task(), self.infrastructure_task(), self.technology_task()]
 		)
 
 

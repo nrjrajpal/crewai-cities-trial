@@ -1,0 +1,12 @@
+Seoul's economy is a significant component of South Korea's overall robust economic performance.  While precise figures for Seoul's GDP are difficult to isolate from national statistics through readily available online sources, it's clear that the city plays a major role. The service sector is dominant, reflecting a trend seen nationwide [1, 2, 3, 4].  However, manufacturing remains a crucial component, with substantial contributions from high-tech industries, including electronics and information technology [6, 7]. These sectors are major employers in Seoul, although precise employment figures specific to the city require access to more localized statistical databases.  The overall low unemployment rate observed in South Korea [8, 9] suggests a healthy employment environment within Seoul as well.  Further research using official South Korean statistical sources, such as Statistics Korea (KOSTAT), would be necessary to obtain precise and up-to-date data on Seoul's GDP and employment trends.
+
+
+[1] Wikipedia. *Economy of South Korea*. https://en.wikipedia.org/wiki/Economy_of_South_Korea
+[2] Statista. *South Korea - GDP distribution across economic sectors 2023*. https://www.statista.com/statistics/375580/south-korea-gdp-distribution-across-economic-sectors/
+[3] globalEDGE. *South Korea: Economy*. https://globaledge.msu.edu/countries/south-korea/economy
+[4] International Trade Administration. *South Korea - Market Overview*. https://www.trade.gov/country-commercial-guides/south-korea-market-overview
+[5]  (Note: Citation 5 is provided in the prompt and not a result of the search.  It describes the governmental structure and is not directly related to the economic data).
+[6] Britannica. *Seoul - Trade, Manufacturing, Technology*. https://www.britannica.com/place/Seoul/Economy
+[7] OECD. *Korea Economic Snapshot*. https://www.oecd.org/en/topics/sub-issues/economic-surveys/korea-economic-snapshot.html
+[8] Lloyds Bank Trade. *The economic context of South Korea*. https://www.lloydsbanktrade.com/en/market-potential/south-korea/economical-context
+[9] Ministry of Economy and Finance. *Economic Bulletin, January 2025*. https://english.moef.go.kr/pu/selectTbPublicDtl.do?boardCd=P0002&seq (Note:  Link may require further specification based on the availability of reports on the website)

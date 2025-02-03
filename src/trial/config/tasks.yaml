@@ -1,48 +1,55 @@
 introduction_task:
   description: >
-    Research and compile an introduction to {topic} city. Provide historical, cultural, and demographic context that helps to understand the city's significance. References must be cited properly in Wikipedia-style, using numbered citations [1], [2], etc., with full details listed at the bottom.
+    Research and compile an introduction to {topic} city. Provide historical, cultural, and demographic context that helps to understand the city's significance. 
+    References must be cited properly in Wikipedia-style, using sequentially numbered citations [1], [2], etc., with full details with links listed at the bottom.
   expected_output: >
     A clear and factual introduction, including historical events, cultural aspects, and demographics, with Wikipedia-style citations.
   agent: introduction_agent
 
 data_and_facts_task:
   description: >
-    Collect specific data related to the city's geography, population, and other critical facts. References should be cited in Wikipedia-style, with numbered citations [1], [2], etc., and full details at the end.
+    Collect specific data related to the city's geography, population, and other critical facts.
+    References must be cited properly in Wikipedia-style, using sequentially numbered citations [1], [2], etc., with full details with links listed at the bottom.
   expected_output: >
     A well-organized list of important geographical and demographic facts, with properly formatted citations.
   agent: data_and_facts_agent
 
 government_task:
   description: >
-    Investigate and summarize the political and governmental structure of {topic} city. References must be formatted in Wikipedia-style, with numbered citations [1], [2], etc., and full source details at the end.
+    Investigate and summarize the political and governmental structure of {topic} city.
+    References must be cited properly in Wikipedia-style, using sequentially numbered citations [1], [2], etc., with full details with links listed at the bottom.
   expected_output: >
     A detailed summary of the city's political system, governance, and history, with proper citations.
   agent: government_agent
 
 economy_task:
   description: >
-    Research the economic status of {topic} city, including its key industries, GDP, and employment trends. All data should be cited using Wikipedia-style references [1], [2], etc.
+    Research the economic status of {topic} city, including its key industries, GDP, and employment trends.
+    References must be cited properly in Wikipedia-style, using sequentially numbered citations [1], [2], etc., with full details with links listed at the bottom.
   expected_output: >
     A factual and well-researched summary of the city's economy, with properly formatted citations.
   agent: economy_agent
 
 business_environment_task:
   description: >
-    Research the business climate in {topic} city, focusing on ease of doing business, regulations, and challenges. References should follow Wikipedia-style citation format [1], [2], etc.
+    Research the business climate in {topic} city, focusing on ease of doing business, regulations, and challenges.
+    References must be cited properly in Wikipedia-style, using sequentially numbered citations [1], [2], etc., with full details with links listed at the bottom.
   expected_output: >
     A comprehensive summary of the business environment, with citations listed properly.
   agent: business_environment_agent
 
 infrastructure_task:
   description: >
-    Investigate and summarize the infrastructure of {topic} city, including transportation, utilities, and ongoing projects. References should be formatted in Wikipedia-style [1], [2], etc.
+    Investigate and summarize the infrastructure of {topic} city, including transportation, utilities, and ongoing projects.
+    References must be cited properly in Wikipedia-style, using sequentially numbered citations [1], [2], etc., with full details with links listed at the bottom.
   expected_output: >
     A well-organized report on infrastructure, with clearly formatted citations.
   agent: infrastructure_agent
 
 technology_task:
   description: >
-    Investigate the technology sector in {topic} city, including major tech companies, innovations, and government-led initiatives. Use proper Wikipedia-style references [1], [2], etc.
+    Investigate the technology sector in {topic} city, including major tech companies, innovations, and government-led initiatives.
+    References must be cited properly in Wikipedia-style, using sequentially numbered citations [1], [2], etc., with full details with links listed at the bottom.
   expected_output: >
     A structured summary of the technology landscape with proper citations.
   agent: technology_agent
@@ -50,6 +57,7 @@ technology_task:
 final_writer_task:
   description: >
     Combine all research sections into a cohesive, comprehensive, well-written wiki article, ensuring proper Wikipedia-style citations throughout the document.
+    References must be cited properly in Wikipedia-style, using sequentially numbered citations [1], [2], etc., with full details with links listed at the bottom.
   expected_output: >
     A detailed, polished and well-organized wiki article with clear references in Wikipedia-style citation format.
   agent: final_writer_agent
